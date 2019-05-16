@@ -1,0 +1,23 @@
+<% include partials/_header %>
+
+<div class="container my-4">
+        <div class="row">
+<div class="col-md-6 offset-md-3" >
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <form action="/update/<%= task._id %>" class="from-control" method="POST">
+                    <div class="from-group">
+                        <input type="text" name="nombre" placeholder="Ingrese Nombre" class="form-control my-1" value="<%= task.nombre %>">
+                    </div>
+                    <div class="from-group">
+                        <input type="text" name="apellidos" placeholder="Ingrese Apellidos" class="form-control my-1" value="<%= task.apellidos %>">
+                    </div>
+                    <button class="btn btn-outline-info btn-block my-1" type="submit"> Actualizar </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<% include partials/_footer %>
