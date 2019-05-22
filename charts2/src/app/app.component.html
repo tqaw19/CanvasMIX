@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title }}</title>
+</head>
+<body>
+  <nav class="navbar navbar-light bg-white shadow border border-light rounded  mx-2 mt-1">
+    <a href="/" class="navbar-brand">{{ title }}</a>
+  </nav>
+
+  <div class="row mx-auto">
+
+   <div class="col-md-7 ml-2 my-5">
+    <div class="card shadow border border-primary pl-2 pr-5 py-3">
+      <div class="card-body" >
+        <div *ngIf="chart">
+          <canvas id="canvas">{{ chart }}</canvas>
+        </div>
+      </div>
+    </div>
+   </div>
+   
+   <div class="col-md-4 mr-0 my-5">
+    <div class="card shadow border border-primary pl-2 pr-5 py-3">
+      <div class="card-body" >
+        <div *ngIf="chart">
+          <canvas id="canvas">{{ chart }}</canvas>
+        </div>
+      </div>
+    </div>
+   </div>
+  </div>
+
+</body>
+</html>            
